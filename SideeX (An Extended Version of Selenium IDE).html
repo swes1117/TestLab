@@ -1,0 +1,586 @@
+
+<!-- saved from url=(0018)http://sideex.org/ -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>SideeX (An Extended Version of Selenium IDE)</title>
+
+<meta name="description" content="SideeX (Expanding Selenium IDE Record-Playback Automation Capabilities for Web Testing)">
+<meta name="keywords" content="Selenium,Selenium IDE,Web Application Regression Testing,Web Regression Testing,Web Application Testing,Web Testing,SideeX,Test Automation, Web Testing Tool">
+<link rel="shortcut icon" href="http://sideex.org/icon/16x16/16x16_Single.png" type="image/x-icon">
+<script async="" src="./SideeX (An Extended Version of Selenium IDE)_files/analytics.js"></script><script language="javascript"> 
+function toggleAbout() {
+	var ele = document.getElementById("toggleTextAbout");
+	if(ele.style.display == "block") {
+    		ele.style.display = "none";
+	}
+	else {
+		ele.style.display = "block";
+	}
+} 
+function toggleReport() {
+	var ele = document.getElementById("toggleTextReport");
+	if(ele.style.display == "block") {
+    		ele.style.display = "none";
+	}
+	else {
+		ele.style.display = "block";
+	}
+} 
+</script>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-78910607-1', 'auto');
+  ga('send', 'pageview');
+
+
+
+
+
+</script>
+
+
+
+</head>
+
+<body><p align="center"></p>
+<div align="center">
+	<table border="0" width="70%">
+		<tbody><tr>
+			<td align="left">
+<p align="center">
+<img border="0" src="./SideeX (An Extended Version of Selenium IDE)_files/512x512_fit.png" width="217" height="101"></p>
+			<p align="center"><font face="Arial" size="5">SideeX:
+			An Open Source Record-Playback-Style Web Application Testing Tool</font><i><font face="Arial" size="5"><br>
+			&nbsp;</font></i></p>
+			<hr noshade="">
+			<p align="justify" style="margin-top:30px; margin-bottom:30px">
+			<font face="Arial" size="6"><b>What is SideeX</b></font><font face="Arial" size="4"><span lang="en-us">[sɪdɛks]</span></font><font face="Arial" size="6"><b>?<span lang="en-us"> </span></b></font></p>
+			<p style="line-height: 150%">
+			<font face="Arial" size="4">In a word, SideeX is an extended version 
+			of Selenium IDE with a number of expanded automation capabilities.</font></p>
+<p style="line-height: 150%">
+			<font face="Arial" size="4">
+			<a href="http://www.seleniumhq.org/projects/ide/">
+			<font color="#000000">Selenium IDE</font></a> 
+			is <span lang="en-us">one of the most popular </span>r<span lang="en-us">ecord-playback-style 
+			web application testing tools</span>. We really 
+			appreciate the effort of the Selenium Core and IDE contributors on developing 
+			the great and useful software. In this open source project, referred 
+			to as SideeX, we attempt to expand the 
+			existing Selenium IDE
+			record-playback automation capabilities and provide a number of 
+			advanced improvements. SideeX runs as 
+			<span lang="en-us">an </span>extension<span lang="en-us"> for both</span> Firefox 
+			and Chrome. It is available for free 
+			download and use.</font><font color="#000000" face="Arial" size="4"><span style="text-decoration: none"> </span></font></p>
+<p style="line-height: 150%">
+			<img border="0" src="./SideeX (An Extended Version of Selenium IDE)_files/snapshot2.png" width="657" height="682" style="border-style: solid; border-width: 1px; padding-left: 4px; padding-right: 4px; padding-top: 1px; padding-bottom: 1px"></p>
+<p style="line-height: 150%" align="center">
+			&nbsp;</p>
+			<p align="justify" style="margin-top:30px; margin-bottom:30px">
+			<b><font face="Arial" size="6">Latest Updates</font></b></p>
+			<p style="line-height: 150%">
+			<font face="Arial" size="4">
+			<font color="#000000"><span style="text-decoration: none">- SideeX 2 
+			(version 2.2)</span></font> for Chrome has been released. 
+			<a href="https://chrome.google.com/webstore/detail/sideex/nefadabeoagfkgmkgegmjgdhegbllple">
+			Install now</a>. (2017/9/8)</font></p>
+<p style="line-height: 150%">
+			<font face="Arial" size="4">
+			<font color="#000000"><span style="text-decoration: none">- SideeX 
+			0.8.0</span></font> has been released. 7 new automation features 
+			are added. The existing automation features are also enhanced. See the
+			<a href="https://addons.mozilla.org/en-US/firefox/addon/sideex/versions/">
+			change log</a>. (2016/12/15)</font></p>
+			<p align="justify" style="line-height: 150%">
+			<font face="Arial" size="4">
+			<font color="#000000"><span style="text-decoration: none">- SideeX 
+			0.7.</span></font>1 has been released. See the
+			<a href="https://addons.mozilla.org/en-US/firefox/addon/sideex/versions/">
+			change log</a>. (2016/10/22)</font></p>
+			<p align="justify" style="margin-top:40px; margin-bottom:30px">
+			<font face="Arial" size="6"><b>
+			SideeX 2 for Firefox and Chrome</b></font></p>
+<p style="margin-top:0px; margin-bottom:30px">
+<font face="Arial" size="4">SideeX 2 (version 2.x) was developed 
+based on WebExtensions API and supports running on Chrome and Firefox. It preserves several 
+key 
+features of Selenium IDE and provides a number of advanced improvements. The 
+preserved key features of Selenium IDE include easy-to-use user interface style<span lang="en-us"> 
+and </span>locators<span lang="en-us"> with</span> target element selection. The advanced improvements <span lang="en-us">are as follows</span>:</font></p>
+<p style="line-height: 150%">
+			<font size="5" face="Arial">Support Running on Firefox and Chrome<br>
+			</font>
+			<font size="4" face="Arial">SideeX 2 runs as an extension for both 
+			Firefox and Chrome.
+			</font></p>
+<p style="line-height: 150%">
+			<font size="5" face="Arial">Support Parallel Running 
+			<span lang="en-us">of </span>Multi<span lang="en-us">-</span>SideeX 
+			on one Desktop<br>
+			</font><font face="Arial" size="4">SideeX 2 supports running two or 
+			more SideeX instances in relation to different browser windows concurrently on one desktop for more 
+			efficiently processing test suites. For example, start three browser 
+			windows (NOT tabs) and open SideeX on each browser window's toolbar, 
+			then load and playback test suites by each SideeX with its 
+			corresponding browser window. </font></p>
+<p style="line-height: 150%">
+			<font size="5" face="Arial">Support Editing<span lang="en-us"> and 
+			Running </span>Multi<span lang="en-us">-</span>Test Suites in One Panel<br>
+			</font><font face="Arial" size="4">SideeX 2 support opening, editing 
+			and running multiple test suites in one panel. The 
+			test suites can be automatically triggered and processed 
+			sequentially.</font></p>
+<p style="line-height: 150%">
+			<span style="color: rgb(37, 37, 37); font-family: Arial; font-variant: normal; letter-spacing: normal; line-height: 28px; orphans: auto; text-align: left; text-indent: 0px; text-transform: none; white-space: normal; widows: 1; word-spacing: 0px; -webkit-text-stroke-width: 0px; display: inline !important; float: none; background-color: rgb(255, 255, 255)">
+			<font size="5">Auto</font></span><font face="Arial" size="5">-</font><span style="color: rgb(37, 37, 37); font-family: Arial; font-variant: normal; letter-spacing: normal; line-height: 28px; orphans: auto; text-align: left; text-indent: 0px; text-transform: none; white-space: normal; widows: 1; word-spacing: 0px; -webkit-text-stroke-width: 0px; display: inline !important; float: none; background-color: rgb(255, 255, 255)"><font size="5">Generate/Play Commands for </font></span>
+			<font size="5" face="Arial">Selecting Unnamed Windows and Inner Frames<br>
+			</font>
+	<font face="Arial" size="4">Automatically record and play 
+	commands for unnamed new popup windows and unnamed inner frames. We would 
+	suggest closing all other tabs/popup windows on the browser before starting 
+	a new recording.</font></p>
+<p style="line-height: 150%">
+			<span style="color: rgb(37, 37, 37); font-family: Arial; font-variant: normal; letter-spacing: normal; line-height: 28px; orphans: auto; text-align: left; text-indent: 0px; text-transform: none; white-space: normal; widows: 1; word-spacing: 0px; -webkit-text-stroke-width: 0px; display: inline !important; float: none; background-color: rgb(255, 255, 255)">
+			<font size="5">Auto</font></span><font face="Arial" size="5">-</font><font size="5"><span style="color: rgb(37, 37, 37); font-family: Arial; font-variant: normal; letter-spacing: normal; line-height: 28px; orphans: auto; text-align: left; text-indent: 0px; text-transform: none; white-space: normal; widows: 1; word-spacing: 0px; -webkit-text-stroke-width: 0px; display: inline !important; float: none; background-color: rgb(255, 255, 255)">Generate Commands for </span>
+			<span style="color: rgb(37, 37, 37); font-family: Arial; font-variant: normal; line-height: 28px; orphans: auto; text-align: left; text-indent: 0px; text-transform: none; white-space: normal; widows: 1; word-spacing: 0px; -webkit-text-stroke-width: 0px; display: inline !important; float: none; background-color: rgb(255, 255, 255)">
+			Closing</span></font><font size="5" face="Arial"> New Popup Windows<br>
+			</font>
+	<font face="Arial" size="4">Automatically generate close commands when the 
+			user closes new popup windows in the recording phase. The close 
+			command will be added to the command list together with the next 
+			command.</font></p>
+<p style="line-height: 150%"><font size="5" face="Arial">Auto-Wait 
+			for AJAX Requests Completion<br>
+</font>
+	<font face="Arial" size="4">Automatically force wait for the 
+	completion of all AJAX requests running in the background before playing a 
+	command. The timeout is 30 seconds. For the web page always with running 
+	AJAX requests, the extension only waits for timeout before playing the first 
+	command operated on the page for the efficiency. </font></p>
+<p style="line-height: 150%"><font size="5" face="Arial">Auto-Wait 
+			for
+			Page Loading Completion<br>
+</font>
+	<font face="Arial" size="4">Automatically force wait for the completion of loading a page before 
+			playing a command.</font></p>
+<p style="line-height: 150%"><font size="5" face="Arial">Auto-Wait for DOM 
+Change Completion<br>
+</font>
+	<font face="Arial" size="4">Automatically force wait for the 
+	completion of continuous DOM modifications triggered by scripts before 
+			playing a command. The timeout is 10 seconds.</font></p>
+<p style="line-height: 150%"><font size="5" face="Arial">Auto-Wait Until the 
+Target Element is Found (Implicit Wait)<br>
+</font>
+	<font face="Arial" size="4">Automatically force wait until the 
+	target element is found before playing a command (also called implicit wait). The default timeout is set 
+	to 30 seconds.</font></p>
+<p style="line-height: 150%">
+			<span style="color: rgb(37, 37, 37); font-family: Arial; font-variant: normal; letter-spacing: normal; line-height: 28px; orphans: auto; text-align: left; text-indent: 0px; text-transform: none; white-space: normal; widows: 1; word-spacing: 0px; -webkit-text-stroke-width: 0px; display: inline !important; float: none; background-color: rgb(255, 255, 255)">
+			<font size="5">Auto</font></span><font face="Arial" size="5">-</font><span style="color: rgb(37, 37, 37); font-family: Arial; font-variant: normal; letter-spacing: normal; line-height: 28px; orphans: auto; text-align: left; text-indent: 0px; text-transform: none; white-space: normal; widows: 1; word-spacing: 0px; -webkit-text-stroke-width: 0px; display: inline !important; float: none; background-color: rgb(255, 255, 255)"><font size="5">Generate</font></span><font face="Arial" size="5"> 
+			Influential Mouseover and Mouseout Commands<br>
+			</font>
+	<font face="Arial" size="4">Automatically generate the 
+	mouse over and mouse out commands that will cause element insertions.</font></p>
+<p style="line-height: 150%">
+			<span style="color: rgb(37, 37, 37); font-family: Arial; font-variant: normal; letter-spacing: normal; line-height: 28px; orphans: auto; text-align: left; text-indent: 0px; text-transform: none; white-space: normal; widows: 1; word-spacing: 0px; -webkit-text-stroke-width: 0px; display: inline !important; float: none; background-color: rgb(255, 255, 255)">
+			<font size="5">Auto</font></span><font face="Arial" size="5">-</font><span style="color: rgb(37, 37, 37); font-family: Arial; font-variant: normal; letter-spacing: normal; line-height: 28px; orphans: auto; text-align: left; text-indent: 0px; text-transform: none; white-space: normal; widows: 1; word-spacing: 0px; -webkit-text-stroke-width: 0px; display: inline !important; float: none; background-color: rgb(255, 255, 255)"><font size="5">Generate Influential </font></span>
+			<font face="Arial" size="5">
+			Scrolling Commands<br>
+			</font>
+	<font face="Arial" size="4">Automatically generate scrolling 
+	commands that will cause element insertions.</font></p>
+<p style="line-height: 150%">
+			<span style="color: rgb(37, 37, 37); font-family: Arial; font-variant: normal; letter-spacing: normal; line-height: 28px; orphans: auto; text-align: left; text-indent: 0px; text-transform: none; white-space: normal; widows: 1; word-spacing: 0px; -webkit-text-stroke-width: 0px; display: inline !important; float: none; background-color: rgb(255, 255, 255)">
+			<font size="5">Auto</font></span><font face="Arial" size="5">-</font><span style="color: rgb(37, 37, 37); font-family: Arial; font-variant: normal; letter-spacing: normal; line-height: 28px; orphans: auto; text-align: left; text-indent: 0px; text-transform: none; white-space: normal; widows: 1; word-spacing: 0px; -webkit-text-stroke-width: 0px; display: inline !important; float: none; background-color: rgb(255, 255, 255)"><font size="5">Generate/Play 
+			HTML5 and Non-HTML5 Drag and Drop Commands<br>
+			</font></span>
+	<font face="Arial" size="4">Automatically generate and play two 
+	types of drag and drop commands. The first type is dragAndDropToObject 
+	command for HTML5 drag and drop feature. The second type is a sequence of 
+	commands of mouse down, move, and up for non-HTML5 drag and drop feature. 
+	Which type of commands should be recorded regarding a drag and drop action 
+	will be automatically determined while recording.</font></p>
+<p style="line-height: 150%">
+			<span style="color: rgb(37, 37, 37); font-family: Arial; font-variant: normal; letter-spacing: normal; line-height: 28px; orphans: auto; text-align: left; text-indent: 0px; text-transform: none; white-space: normal; widows: 1; word-spacing: 0px; -webkit-text-stroke-width: 0px; display: inline !important; float: none; background-color: rgb(255, 255, 255)">
+			<font size="5">Auto-Generate Commands for Non-Form Submitting 
+			Triggered by Enter Key<br>
+			</font></span>
+	<font face="Arial" size="4">Automatically generate sendKeys 
+	commands for submitting a query through pressing Enter key in a text field 
+	without a form. This type of submitting often occurs with custom Javascript 
+	functions or AJAX for requesting server-side pages.</font></p>
+<p style="line-height: 150%">
+			<font size="5">
+			<span style="color: rgb(37, 37, 37); font-family: Arial; font-variant: normal; letter-spacing: normal; line-height: 28px; orphans: auto; text-align: left; text-indent: 0px; text-transform: none; white-space: normal; widows: 1; word-spacing: 0px; -webkit-text-stroke-width: 0px; display: inline; float: none; background-color: rgb(255, 255, 255)">
+			Auto-Generate clickAt Commands and Auto-Trigger Mouse Down/Up 
+			Events while Playing<br>
+			</span></font>
+	<font face="Arial" size="4">Automatically generate a clickAt 
+	command for the case that no click command is generated for a click action 
+	in the 
+	recording phase. In addition, mouse down/up events will also be triggered 
+	while playing a click or clickAt command. The ordering is: mouse down, 
+	click, and mouse up.</font></p>
+<p style="line-height: 150%">
+			<font size="5">
+			<span style="color: rgb(37, 37, 37); font-family: Arial; font-variant: normal; letter-spacing: normal; line-height: 28px; orphans: auto; text-align: left; text-indent: 0px; text-transform: none; white-space: normal; widows: 1; word-spacing: 0px; -webkit-text-stroke-width: 0px; display: inline; float: none; background-color: rgb(255, 255, 255)">
+			Auto-Generate/Play doubleClick and doubleClickAt Commands<br>
+			</span></font>
+	<font face="Arial" size="4">Automatically record and play doubleClick and doubleClickAt commands. When playing a doubleClick command, 
+	the following events are sequentially created: click, click, and doubleclick. 
+	When playing a doubleClickAt command, the following events are sequentially 
+	created: mousedown, click, mouseup, mousedown, click, mouseup, and 
+	doubleclick.</font></p>
+<p style="line-height: 150%">
+			<font size="5">
+			<span style="color: rgb(37, 37, 37); font-family: Arial; font-variant: normal; letter-spacing: normal; line-height: 28px; orphans: auto; text-align: left; text-indent: 0px; text-transform: none; white-space: normal; widows: 1; word-spacing: 0px; -webkit-text-stroke-width: 0px; display: inline; float: none; background-color: rgb(255, 255, 255)">
+			Auto-Generate Commands for Autocomplete Feature<br>
+			</span></font>
+	<font face="Arial" size="4">Automatically generate related 
+	commands for autocomplete feature on input elements. The extension enables 
+	correctly recording type and click commands for the selected target element. 
+	The type command implementation is overridden based on sendKeys command to 
+	make autocomplete candidates visible. In addition, it supports recording key down/up/tab commands while 
+	selecting candidates through keyboard.</font></p>
+<p style="line-height: 150%">
+			<font size="5">
+			<span style="color: rgb(37, 37, 37); font-family: Arial; font-variant: normal; letter-spacing: normal; line-height: 28px; orphans: auto; text-align: left; text-indent: 0px; text-transform: none; white-space: normal; widows: 1; word-spacing: 0px; -webkit-text-stroke-width: 0px; display: inline; float: none; background-color: rgb(255, 255, 255)">
+			Auto-Generate/Play Commands for Editing Content-Editable Elements<br>
+			</span></font>
+	<font face="Arial" size="4">Automatically generate and play editContent commands for editing content-editable elements, e.g., rich text 
+	editors. After a user edits the content of a content-editable element while 
+	recording, a corresponding editContent command will be 
+	automatically generated, which is triggered by detecting the focus removal 
+	of the element. The editContent is a newly defined command in SideeX. It is not a regular command 
+	defined in the original Selenium IDE.</font></p>
+			<p style="margin-top:40px; margin-bottom:30px"><b>
+			<font face="Arial" size="6">Commands Supported</font></b></p>
+<table border="1" width="100%">
+	<tbody><tr>
+		<td width="30%"><b><font size="4" face="Arial">Command</font></b></td>
+		<td width="30%"><b><font size="4" face="Arial">Target</font></b></td>
+		<td width="30%"><b><font size="4" face="Arial">Value</font></b></td>
+	</tr>
+	<tr id="addSelection">
+		<td width="30%" align="left" valign="top"><font size="4" face="Arial">addSelection</font></td>
+		<td align="left" valign="top" width="30%"><font size="4" face="Arial">A locator of a multi-select 
+		box</font></td>
+		<td width="30%" align="left" valign="top"><font size="4" face="Arial">An option 
+		locator of the element to be added. For example: "label=Option1"</font></td>
+	</tr>
+	<tr id="answerOnNextPrompt">
+		<td width="30%" align="left" valign="top"><font size="4" face="Arial">
+		answerOnNextPrompt</font></td>
+		<td align="left" valign="top" width="30%"><font size="4" face="Arial">The string to be set to the 
+		next prompt pop-up</font></td>
+		<td width="30%" align="left" valign="top"><font size="4" face="Arial">X</font></td>
+	</tr>
+	<tr id="assertAlert">
+		<td width="30%" align="left" valign="top"><font size="4" face="Arial">assertAlert</font></td>
+		<td align="left" valign="top" width="30%"><font size="4" face="Arial">The expected alert message</font></td>
+		<td width="30%" align="left" valign="top"><font size="4" face="Arial">X</font></td>
+	</tr>
+	<tr id="assertConfirmation">
+		<td width="30%" align="left" valign="top"><font size="4" face="Arial">
+		assertConfirmation</font></td>
+		<td align="left" valign="top" width="30%"><font size="4" face="Arial">The expected confirmation 
+		message</font></td>
+		<td width="30%" align="left" valign="top"><font size="4" face="Arial">X</font></td>
+	</tr>
+	<tr id="assertPrompt">
+		<td width="30%" align="left" valign="top"><font size="4" face="Arial">assertPrompt</font></td>
+		<td align="left" valign="top" width="30%"><font size="4" face="Arial">The expected prompt message</font></td>
+		<td width="30%" align="left" valign="top"><font size="4" face="Arial">X</font></td>
+	</tr>
+	<tr id="assertText">
+		<td width="30%" align="left" valign="top"><font size="4" face="Arial">assertText</font></td>
+		<td align="left" valign="top" width="30%"><font size="4" face="Arial">A locator</font></td>
+		<td width="30%" align="left" valign="top"><font size="4" face="Arial">The expected 
+		string of the target element (Exact matching). </font>
+		<p><font size="4" face="Arial">Variable declared in the storeXXX commands can be used 
+		in the string. For example: "Hello ${var_usr}"</font></p></td>
+	</tr>
+	<tr id="assertTitle">
+		<td width="30%" align="left" valign="top"><font size="4" face="Arial">assertTitle</font></td>
+		<td align="left" valign="top" width="30%"><font size="4" face="Arial">The expected string of the 
+		title (Exact matching). </font>
+		<p><font size="4" face="Arial">Variable declared in the storeXXX commands can be used 
+		in the string. For example: "Hello ${var_usr}"</font></p></td>
+		<td width="30%" align="left" valign="top"><font size="4" face="Arial">X</font></td>
+	</tr>
+	<tr id="chooseCancelOnNextConfirmation">
+		<td width="30%" align="left" valign="top"><font size="4" face="Arial">
+		chooseCancelOnNextConfirmation</font></td>
+		<td align="left" valign="top" width="30%"><font size="4" face="Arial">X</font></td>
+		<td width="30%" align="left" valign="top"><font size="4" face="Arial">X</font></td>
+	</tr>
+	<tr id="chooseCancelOnNextPrompt">
+		<td width="30%" align="left" valign="top"><font size="4" face="Arial">
+		chooseCancelOnNextPrompt</font></td>
+		<td align="left" valign="top" width="30%"><font size="4" face="Arial">X </font></td>
+		<td width="30%" align="left" valign="top"><font size="4" face="Arial">X</font></td>
+	</tr>
+	<tr id="chooseOkOnNextConfirmation">
+		<td width="30%" align="left" valign="top"><font size="4" face="Arial">
+		chooseOkOnNextConfirmation</font></td>
+		<td align="left" valign="top" width="30%"><font size="4" face="Arial">X</font></td>
+		<td width="30%" align="left" valign="top"><font size="4" face="Arial">X</font></td>
+	</tr>
+	<tr id="clickAt">
+		<td width="30%" align="left" valign="top"><font size="4" face="Arial">clickAt</font></td>
+		<td align="left" valign="top" width="30%"><font size="4" face="Arial">A locator</font></td>
+		<td width="30%" align="left" valign="top"><font size="4" face="Arial">x,y position of 
+		the mouse event relative to the target element. For example: "10,10"</font></td>
+	</tr>
+	<tr id="dragAndDropToObject">
+		<td width="30%" align="left" valign="top"><font size="4" face="Arial">
+		dragAndDropToObject</font></td>
+		<td align="left" valign="top" width="30%"><font size="4" face="Arial">The locator of the element 
+		to be dragged</font></td>
+		<td width="30%" align="left" valign="top"><font size="4" face="Arial">The locator of 
+		the element on which the target element is dropped</font></td>
+	</tr>
+	<tr id="doubleClickAt">
+		<td width="30%" align="left" valign="top"><font size="4" face="Arial">doubleClickAt</font></td>
+		<td align="left" valign="top" width="30%">&nbsp;</td>
+		<td width="30%" align="left" valign="top">&nbsp;</td>
+	</tr>
+	<tr id="echo">
+		<td width="30%" align="left" valign="top"><font size="4" face="Arial">echo</font></td>
+		<td align="left" valign="top" width="30%"><font size="4" face="Arial">X</font></td>
+		<td width="30%" align="left" valign="top"><font size="4" face="Arial">The string to 
+		be printed in the log console. Variable declared in the storeXXX 
+		commands can be used in the string. For example: "Hello ${var_usr}"</font></td>
+	</tr>
+	<tr id="editContent">
+		<td width="30%" align="left" valign="top"><font size="4" face="Arial">editContent</font></td>
+		<td align="left" valign="top" width="30%"><font size="4" face="Arial">A locator</font></td>
+		<td width="30%" align="left" valign="top"><font size="4" face="Arial">The string to 
+		be set to the content of the target element with attribute 
+		contenteditable="true"</font></td>
+	</tr>
+	<tr id="mouseDownAt">
+		<td width="30%" align="left" valign="top"><font size="4" face="Arial">mouseDownAt</font></td>
+		<td align="left" valign="top" width="30%"><font size="4" face="Arial">A locator</font></td>
+		<td width="30%" align="left" valign="top"><font size="4" face="Arial">x,y position of 
+		the mouse event relative to the target element. For example: "10,10"</font></td>
+	</tr>
+	<tr id="mouseMoveAt">
+		<td width="30%" align="left" valign="top"><font size="4" face="Arial">mouseMoveAt</font></td>
+		<td align="left" valign="top" width="30%"><font size="4" face="Arial">A locator</font></td>
+		<td width="30%" align="left" valign="top"><font size="4" face="Arial">x,y position of 
+		the mouse event relative to the target element. For example: "10,10"</font></td>
+	</tr>
+	<tr id="mouseOut">
+		<td width="30%" align="left" valign="top"><font size="4" face="Arial">mouseOut</font></td>
+		<td align="left" valign="top" width="30%"><font size="4" face="Arial">A locator</font></td>
+		<td width="30%" align="left" valign="top"><font size="4" face="Arial">X</font></td>
+	</tr>
+	<tr id="mouseOver">
+		<td width="30%" align="left" valign="top"><font size="4" face="Arial">mouseOver</font></td>
+		<td align="left" valign="top" width="30%"><font size="4" face="Arial">A locator</font></td>
+		<td width="30%" align="left" valign="top"><font size="4" face="Arial">X</font></td>
+	</tr>
+	<tr id="mouseUpAt">
+		<td width="30%" align="left" valign="top"><font size="4" face="Arial">mouseUpAt</font></td>
+		<td align="left" valign="top" width="30%"><font size="4" face="Arial">A locator</font></td>
+		<td width="30%" align="left" valign="top"><font size="4" face="Arial">x,y position of 
+		the mouse event relative to the target element. For example: "10,10"</font></td>
+	</tr>
+	<tr id="open">
+		<td width="30%" align="left" valign="top"><font size="4" face="Arial">open</font></td>
+		<td align="left" valign="top" width="30%"><font size="4" face="Arial">A URL</font></td>
+		<td width="30%" align="left" valign="top"><font size="4" face="Arial">X</font></td>
+	</tr>
+	<tr id="pause">
+		<td width="30%" align="left" valign="top"><font size="4" face="Arial">pause</font></td>
+		<td align="left" valign="top" width="30%"><font size="4" face="Arial">X</font></td>
+		<td width="30%" align="left" valign="top"><font size="4" face="Arial">The amount of 
+		time to sleep in millisecond. For example: "5000" means sleep for 5 
+		seconds.</font></td>
+	</tr>
+	<tr id="removeSelection">
+		<td width="30%" align="left" valign="top"><font size="4" face="Arial">removeSelection</font></td>
+		<td align="left" valign="top" width="30%"><font size="4" face="Arial">A locator of a multi-select 
+		box</font></td>
+		<td width="30%" align="left" valign="top"><font size="4" face="Arial">An option 
+		locator of the element to be removed. For example: "label=Option1"</font></td>
+	</tr>
+	<tr id="runScript">
+		<td width="30%" align="left" valign="top"><font size="4" face="Arial">runScript</font></td>
+		<td align="left" valign="top" width="30%"><font size="4" face="Arial">The Javascript code to be 
+		run</font></td>
+		<td width="30%" align="left" valign="top"><font size="4" face="Arial">X</font></td>
+	</tr>
+	<tr id="select">
+		<td width="30%" align="left" valign="top"><font size="4" face="Arial">select</font></td>
+		<td align="left" valign="top" width="30%"><font size="4" face="Arial">A locator of a drop-down 
+		menu</font></td>
+		<td width="30%" align="left" valign="top"><font size="4" face="Arial">An option 
+		locator. For example: "label=Option1"</font></td>
+	</tr>
+	<tr id="selectFrame">
+		<td width="30%" align="left" valign="top"><font size="4" face="Arial">selectFrame</font></td>
+		<td align="left" valign="top" width="30%"><font size="4" face="Arial">"index=0" (Select the first 
+		frame of index 0)</font><p><font size="4" face="Arial">"relative=parent" (Select the 
+		parent frame)</font></p>
+		<p><font size="4" face="Arial">"relative=top" (Select the top frame)</font></p></td>
+		<td width="30%" align="left" valign="top"><font size="4" face="Arial">X</font></td>
+	</tr>
+	<tr id="selectWindow">
+		<td width="30%" align="left" valign="top"><font size="4" face="Arial">selectWindow</font></td>
+		<td align="left" valign="top" width="30%"><font size="4" face="Arial">Auto-generated</font></td>
+		<td width="30%" align="left" valign="top"><font size="4" face="Arial">X</font></td>
+	</tr>
+	<tr id="sendKeys">
+		<td width="30%" align="left" valign="top"><font size="4" face="Arial">sendKeys</font></td>
+		<td align="left" valign="top" width="30%"><font size="4" face="Arial">A locator</font></td>
+		<td width="30%" align="left" valign="top"><font size="4" face="Arial">A character. 
+		For example: "${KEY_DOWN}"</font></td>
+	</tr>
+	<tr id="store">
+		<td width="30%" align="left" valign="top"><font size="4" face="Arial">store</font></td>
+		<td align="left" valign="top" width="30%"><font size="4" face="Arial">A string</font></td>
+		<td width="30%" align="left" valign="top"><font size="4" face="Arial">The name of the 
+		variable storing the string. For example: "var_usr"</font></td>
+	</tr>
+	<tr id="storeText">
+		<td width="30%" align="left" valign="top"><font size="4" face="Arial">storeText</font></td>
+		<td align="left" valign="top" width="30%"><font size="4" face="Arial">A locator</font></td>
+		<td width="30%" align="left" valign="top"><font size="4" face="Arial">The name of the 
+		variable storing the text of the target element. For example: 
+		"var_ele_txt"</font></td>
+	</tr>
+	<tr id="storeTitle">
+		<td width="30%" align="left" valign="top"><font size="4" face="Arial">storeTitle</font></td>
+		<td align="left" valign="top" width="30%"><font size="4" face="Arial">The title auto-generated</font></td>
+		<td width="30%" align="left" valign="top"><font size="4" face="Arial">The name of the 
+		variable storing the title. For example: "var_title"</font></td>
+	</tr>
+	<tr id="type">
+		<td width="30%" align="left" valign="top"><font size="4" face="Arial">type</font></td>
+		<td align="left" valign="top" width="30%"><font size="4" face="Arial">A locator</font></td>
+		<td width="30%" align="left" valign="top"><font size="4" face="Arial">The string to 
+		be set to an input field.</font></td>
+	</tr>
+	<tr id="verifyText">
+		<td width="30%" align="left" valign="top"><font size="4" face="Arial">verifyText</font></td>
+		<td align="left" valign="top" width="30%"><font size="4" face="Arial">A locator</font></td>
+		<td width="30%" align="left" valign="top"><font size="4" face="Arial">The expected 
+		string of the target element (Exact matching). The next command will 
+		still be run even if the text verification fails. </font>
+		<p><font size="4" face="Arial">Variable declared in the storeXXX commands can be used 
+		in the string. For example: "Hello ${var_usr}"</font></p></td>
+	</tr>
+	<tr id="verifyTitle">
+		<td width="30%" align="left" valign="top"><font size="4" face="Arial">verifyTitle</font></td>
+		<td align="left" valign="top" width="30%"><font size="4" face="Arial">The expected string of the 
+		title (Exact matching). The next command will still be run even if the 
+		text verification fails.</font><p><font size="4" face="Arial">Variable declared in 
+		the storeXXX commands can be used in the string. For example: "Hello ${var_usr}"</font></p></td>
+		<td width="30%" align="left" valign="top"><font size="4" face="Arial">X</font></td>
+	</tr>
+</tbody></table>
+<p><font size="4" face="Arial">NOTE THAT<b><br>
+</b>1. As 
+a number of changes were made on test case file format in SideeX 2, SideeX 2 does not 
+support importing test case files created by Selenium IDE and SideeX 0.x.<br>
+2. chooseCancelOnNextPrompt and editContent are new commands proposed by SideeX.</font></p>
+<p align="justify" style="margin-top:40px; margin-bottom:30px"><b>
+			<font face="Arial" size="6">Free Download and Use</font></b></p>
+			<p align="justify" style="line-height: 150%">
+			<font face="Arial" size="4">SideeX 2 for Firefox: to be 
+			published.&nbsp; </font></p>
+			<p align="justify" style="line-height: 150%">
+			<font face="Arial" size="4">SideeX 2 for Chrome:
+			<a href="https://chrome.google.com/webstore/detail/sideex/nefadabeoagfkgmkgegmjgdhegbllple">
+			Install now</a></font></p>
+<p align="justify" style="line-height: 150%">
+			<font face="Arial" size="4">SideeX 0.8.0 for Firefox:
+			<a href="https://addons.mozilla.org/zh-TW/firefox/addon/sideex/">
+			Install now</a></font></p>
+<p align="justify" style="margin-top:40px; margin-bottom:30px"><b>
+<font face="Arial" size="6">Quick Start</font></b></p>
+			<p align="justify" style="line-height: 150%">
+			<font face="Arial" size="4">Step 1. Start Firefox/Chrome and open 
+			the web page under test<b>.</b></font></p>
+<p align="justify" style="line-height: 150%">
+			<font face="Arial" size="4">Step 2. Click SideeX icon on the browser 
+			tool bar and use it just like using Selenium IDE. </font></p>
+<p align="justify" style="margin-top:40px; margin-bottom:30px"><b>
+<font face="Arial" size="6">Open Source License</font></b></p>
+			<p style="line-height: 150%">
+			<font face="Arial" size="4">SideeX is released under the
+			<a href="http://www.apache.org/licenses/LICENSE-2.0">
+			<font color="#0000FF">Apache 2.0 License</font></a>. In SideeX, part 
+			of Selenium IDE 2.9.1.1 source code is included under Apache 2.0 
+			License. </font></p>
+<p style="line-height: 150%">
+			<font face="Arial" size="4">
+			<a href="https://github.com/SideeX/sideex">Github</a></font></p>
+<p align="justify" style="line-height: 150%">
+			&nbsp;</p>
+			<p align="justify" style="line-height: 150%"></p>
+			<p align="justify" style="line-height: 150%"></p>
+			<hr noshade="">
+			<p align="left" style="margin-bottom:5px">
+				
+				<a href="javascript:toggleReport();">
+				<font face="Arial" size="4" color="#0000FF">Feedback</font></a></p>
+				
+			<div id="toggleTextReport" style="display: none">
+				<p align="left" style="line-height: 150%; margin-top:10px">
+				<font face="Arial" size="4">We welcome your feedback or issue 
+				report via <a href="https://github.com/SideeX/sideex/issues">
+				GitHub Issues</a> or <u><a href="mailto:sideex.org@gmail.com">sideex.org@gmail.com</a></u>.</font></p>
+				
+			</div>
+				
+<p align="left" style="margin-bottom:5px"><font face="Arial">
+<a href="javascript:toggleAbout();">
+			<font color="#0000FF" size="4">About</font></a></font></p>
+			
+			
+			<div id="toggleTextAbout" style="display: none">
+				<p align="left" style="line-height: 150%; margin-top:10px">
+				<font face="Arial" size="4">Team Lead: 
+				<a href="http://selab.csie.ncku.edu.tw/home/advisor.html"><font color="#000000">Shin-Jie Lee</font></a>, 
+				Computer and 
+				Network Center, National Cheng Kung University, Taiwan.<br>
+				<br>
+				Featured committers: Chi-En Huang, Jie-Lin You, 
+				Yu-Xian Chen, Shuo-Heng Shih, Chen-Chieh Ping, Yun-Wen Lin, 
+				Syuan-Yi Lin, Ming-Hung Hsu, Ming-Hsuan Hsieh.</font></p>
+				
+			</div>
+			
+<p align="center" style="line-height: 150%">
+			<font face="Arial" size="4">Copyright © 2017 SideeX Team</font></p>
+			<p align="left"></p></td>
+		</tr>
+	</tbody></table>
+</div>
+<p align="left"></p>
+<p align="left"></p>
+
+
+
+<script>
+var downloadLink = document.getElementById('downloadlink');
+addListener(downloadLink, 'click', function() { 
+     ga('send', 'event', 'SideeX Download Count', 'click', 'SideeXDownload', 4);
+});
+
+function addListener(element, type, callback) {
+     if (element.addEventListener) element.addEventListener(type, callback);
+    else if (element.attachEvent) element.attachEvent('on' + type, callback);
+    element.addEventListener
+}
+</script>
+
+</body></html>
